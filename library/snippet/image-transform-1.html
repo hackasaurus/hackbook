@@ -1,7 +1,11 @@
 <div class="css">
 &lt;style&gt;
     img {
-        -moz-transform: rotate(70deg);
+        -moz-transform: rotate(70deg); /* Firefox */
+        -webkit-transform: rotate(70deg); /* Webkit (Safari, Chrome) */
+        -o-transform: rotate(70deg); /* Opera */
+        -ms-transform:rotate(70deg); /* IE */
+        transform: rotate(70deg);
     }
 &lt;/style&gt;
 </div>

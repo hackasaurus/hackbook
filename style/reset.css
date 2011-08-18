@@ -462,7 +462,7 @@ nav.sites {
 	position: absolute;
     right: 2%;
     top: 0;
-    width: 100%;
+    width: auto;
 }
 
 nav.sites ul {

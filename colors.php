@@ -8,6 +8,24 @@
 
 <h1>Colors</h1>
 
+<article class="snippet" id="snippet-color-1">
+	<h1>Using colors</h1>
+	<div class="examples">
+		<div class="how-it-works">
+			<h2>The code</h2>
+			<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/color-1.html') ?></code></pre>
+		</div>
+		<div class="how-it-looks">
+			<h2>How it looks</h2>
+			<div class="preview">
+				<h1>Blue Heading</h1>
+				<h2>Green heading with a pink background</h2>
+			</div>
+			<a class="button" href="http://jsbin.com/uquzig/1/edit#html,live">Hack This</a>
+		</div>
+	</div>
+</article>
+
 <article class="snippet" id="color-words">
 	
 	<h1>Word colors</h1>
@@ -420,24 +438,6 @@
 		</li>
 	</ul>
 	
-	</article>
-	
-	<article class="snippet" id="snippet-color-1">
-		<h1>Using colors</h1>
-		<div class="examples">
-			<div class="how-it-works">
-				<h2>The code</h2>
-				<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/color-1.html') ?></code></pre>
-			</div>
-			<div class="how-it-looks">
-				<h2>How it looks</h2>
-				<div class="preview">
-					<h1>Blue Heading</h1>
-					<h2>Green heading with a pink background</h2>
-				</div>
-				<a class="button" href="http://jsbin.com/uquzig/1/edit#html,live">Hack This</a>
-			</div>
-		</div>
 	</article>
 	
 	<article class="snippet" id="resources">
