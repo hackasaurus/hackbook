@@ -14,9 +14,7 @@
          url('../include/type/permanentmarker/PermanentMarker-webfont.svg#PermanentMarkerRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
-}
-
+	}
 
 @font-face {
     font-family: 'TitilliumText22LLight';
@@ -44,10 +42,6 @@ body {
 	font-size:14px;
 	line-height:22px;
 	color:#EEE;
-	/*background-image: url(http://hackasaurus.org/include/image/paper.jpg);*/
-	/*background-image: url(../image/paper.png);*/
-	/*background-image: url(../image/bg-grid-trans.png);
-	background-color: #6FAACC;*/
 	background-color: #FFF6ED;
 	font-family: Helvetica, Arial, sans-serif;
 	border-top: 2px solid #707070;
@@ -105,16 +99,6 @@ blockquote {
 	padding-left:1em;
 	}
 
-abbr {
-	}
-
-
-/* CODE ------------------------------------ */
-
-code {
-}
-
-
 /* HEADINGS ------------------------------------ */
 
 h1,
@@ -135,23 +119,21 @@ h4,
 h5,
 h6,
 nav { 
-font-family:"TitilliumText22LLight", "Calypso E Light", Rockwell, Georgia, serif; font-size-adjust:0.605; 
-font-weight:200;
-font-style:normal;
-/*color: #FFF;*/
-color: #333;
-}
+	font-family:"TitilliumText22LLight", "Calypso E Light", Rockwell, Georgia, serif; font-size-adjust:0.605; 
+	font-weight:200;
+	font-style:normal;
+	color: #333;
+	}
 
 .tagline {
 	color: #FFF;
 	text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
-}
+	}
 
 h1,
 h2 {
-/*text-shadow: -1px -1px 0 rgba(0,0,0,0.2);*/
-text-shadow: 1px 1px 0 rgba(250,250,250,0.6);	
-}
+	text-shadow: 1px 1px 0 rgba(250,250,250,0.6);	
+	}
 
 h1 {
     font-size: 1.6em;
@@ -176,7 +158,7 @@ section:not(.home) article.snippet h1 {
 article.snippet h1:hover,
 h3:hover {
 	cursor: pointer;
-}
+	}
 
 h2 {
     font-size: 1.3em;
@@ -203,13 +185,12 @@ h6 {
 	line-height: 1em;
 	margin-bottom: 0.5em;
 	text-shadow: none;
-}
+	}
 
 h1.helper-text {
 	font-size: 1.4em;
 	margin-bottom: 0.8em;
-}
-
+	}
 
 /* LISTS ------------------------------------ */
 
@@ -224,14 +205,14 @@ dl {
 	margin-top:1em;
 	}
 
-	dt {
-		font-size:1.2em;
+dt {
+	font-size:1.2em;
 	}
 
-	dd {
-		font-size:1.1em;
-		margin-bottom:1em;
-		color:#454545;
+dd {
+	font-size:1.1em;
+	margin-bottom:1em;
+	color:#454545;
 	}
 
 
@@ -239,9 +220,6 @@ dl {
 
 fieldset {
 	border:0;
-	}
-
-textarea {
 	}
 
 /* IMAGE STYLES ------------------------------------ */
@@ -269,7 +247,7 @@ a:hover img,
 a:focus img,
 a:active img {
 	border: none;
-}
+	}
 
 
 /* COMPONENT: BLOCKS ------------------------------------ */
@@ -291,30 +269,28 @@ footer {
     padding: 0.1em 4%;
     text-align: center;
     text-shadow: -1px -1px 0 rgba(0,0,0,0.4);
-}
+	}
 
 header {
-	/*background-image: url(../image/bg-grid-trans.png);*/
 	background-image: url(../image/hackasaurus-header.png);
-	/*background-image: url(../image/header-red.png);*/
 	background-color: #6DDDFF;
 	background-repeat: repeat-x;
 	background-position: top center;
 	padding: 27px 2% 0px;
-}
+	}
 
 section[role="main"] {
 	min-height: 100%;
 	width: 100%;
 	display: block; margin-bottom: 6em;
-}
+	}
 
 .container {
 	display: block;
 	position: absolute;
 	min-height: 100%;
 	width: 100%;
-}
+	}
 
 .browser-warning {
 	background-color: #F2BFBF;
@@ -325,7 +301,7 @@ section[role="main"] {
 	overflow: hidden;
 	padding: 1em 1em 0 1em;
 	position: relative;
-}
+	}
 
 .walkthrough li a:link,
 .walkthrough li a:visited,
@@ -343,25 +319,24 @@ article {
     border-radius: 5px;
     background-repeat: repeat;
     border-radius: 4px 4px 4px 4px;
-        padding: 0 1%;
+    padding: 0 1%;
     width: 92%;
     border-bottom: 2px solid rgba(0, 0, 0, 0.35);
-}
+	}
 
 article {
     background-image: url(../image/alpha/black-15.png);
     }
 
 article#resources {
-	/*background-image: url(../image/alpha/black-25.png);*/
 	background-image: none;
 	background-color: #34CEFF;
-}
+	}
 
 article#tutorials {
 	background-color: #F7DE21;
 	background-image: none;
-}
+	}
 
 #resources a:link,
 #resources a:visited,
@@ -369,7 +344,7 @@ article#tutorials {
 #resources a:focus,
 #resources a:active {
 	color: #333;
-}
+	}
 
 header .logo {
     background-image: url("../image/logo-hackbook.png");
@@ -382,7 +357,7 @@ header .logo {
     text-indent: -9999px;
     width: 170px;
     z-index: 1;
-}
+	}
 
 
 nav.primary {
@@ -393,19 +368,19 @@ nav.primary {
 	overflow: hidden;
 	padding: 3px 0 0;
 	width: 100%;
-}
+	}
 
 nav.primary li {
 	background-image: url(../image/nav-li.png);
 	background-position: left bottom;
 	background-repeat: no-repeat;
-}
+	}
 
 nav.primary li:last-of-type a span {
 	background-image: url(../image/nav-li.png);
 	background-repeat: no-repeat;
 	background-position: right bottom;
-}
+	}
 
 nav ul {
 	margin: 0;
@@ -413,17 +388,17 @@ nav ul {
 	list-style-type: none;
 	font-size: 0.9em;
 	text-align: center;
-}
+	}
 
 nav ul li {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-}
+	}
 
 nav.primary ul li {
 	margin-right: -4px;
-}
+	}
 
 nav.primary ul li a:link,
 nav.primary ul li a:visited,
@@ -435,12 +410,12 @@ nav.primary ul li a:active {
     display: block;
     padding: 0;
     text-decoration: none;
-}
+	}
 
 nav.primary ul li span {
 	display: block;
 	padding: 7px 18px 8px 17px;
-}
+	}
 
 body.page-templates nav li.page-templates a,
 body.page-text nav li.page-text a,
@@ -454,12 +429,12 @@ nav.primary li a:active {
 	background-image: url(../image/bg-nav-selected.png);
 	background-repeat: repeat;
 	background-position: bottom center;
-}
+	}
 
 nav.secondary li {
-   border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+	border-bottom: 1px solid rgba(250, 250, 250, 0.4);
     width: 100%;
-}
+	}
 
 nav.secondary li a:link,
 nav.secondary li a:visited,
@@ -467,14 +442,14 @@ nav.secondary li a:hover,
 nav.secondary li a:focus,
 nav.secondary li a:active {
 	padding: 4px;
-}
+	}
 
 nav.sites {
 	position: absolute;
     right: 2%;
     top: 0;
     width: auto;
-}
+	}
 
 nav.sites ul {
 	float: right;
