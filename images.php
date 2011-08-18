@@ -59,6 +59,7 @@
 	<h1>Rotated image</h1>	
 	<div class="examples">
 		<div class="browser-warning">
+			<img src="image/warning.png"/>
 			<p>This style doesn't work in old browsers including older versions of Internet Explorer.</p>
 		</div>
 		<div class="how-it-works">

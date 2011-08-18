@@ -3,6 +3,7 @@
 	<header>
 		<a href="index.php"><img src="./image/logo.png" alt="Hackbook" /></a>
 		<p class="tagline">A library of code for your hacks</p>
+		<p class="beta">Beta</p>
 	</header>
 	
 		<nav class="sites">

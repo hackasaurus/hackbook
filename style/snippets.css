@@ -148,8 +148,12 @@ article.snippet .preview * {
     max-width: 100%;
 }
 
-#snippet-image-transform-1 img {
+#snippet-image-transform-1 .preview img {
 	-moz-transform: rotate(70deg);
+	-webkit-transform: rotate(70deg);
+	-o-transform: rotate(70deg);
+	-ms-transform: rotate(70deg);
+	transform: rotate(70deg);
 }
 
 #snippet-link-4 .preview a:link,
