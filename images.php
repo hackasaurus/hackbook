@@ -55,11 +55,31 @@
 </article>
 
 <article class="snippet" id="snippet-image-transform-1">
-	<h1>Rotated image</h1>
+	
+	<h1>Rotated image</h1>	
 	<div class="examples">
+		<div class="browser-warning">
+			<p>This style doesn't work in old browsers including older versions of Internet Explorer.</p>
+		</div>
 		<div class="how-it-works">
 			<h2>The code</h2>
 			<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/image-transform-1.html') ?></code></pre>
+			<h2>Instructions</h2>	
+			<div class="instructions">
+				<p>We have to add the same style a few times so that it works in a range of browsers.</p>
+				<dl>
+					<dt><code>-moz-transform:</code></dt>
+					<dd>This targets older versions of Firefox browser</dd>
+					<dt><code>-webkit-transform:</code></dt>
+					<dd>Older versions of Webkit browsers, including Safari and Chrome</dd>
+					<dt><code>-o-transform:</code></dt>
+					<dd>Older versions of Opera</dd>
+					<dt><code>-ms-transform:</code></dt>
+					<dd>Newer versions of Internet Explorer</dd>
+					<dt><code>transform:</code></dt>
+					<dd>All modern browsers</dd>
+				</dl>
+			</div>
 		</div>
 	
 		<div class="how-it-looks">
@@ -67,7 +87,7 @@
 			<div class="snippet-preview snippet-image-transform-1">
 				<a style="" href="http://google.com"><img src="library/asset/dinosaur.jpg" alt="dinosaur" width="240px" height="180" /></a>
 			</div>
-			<a class="button" href="http://jsbin.com/anewoz/1/edit#html,live">Hack This</a>
+			<a class="button" href="http://jsbin.com/anewoz/2/edit#html,live">Hack This</a>
 		</div>
 	</div>
 </article>

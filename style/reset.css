@@ -316,6 +316,17 @@ section[role="main"] {
 	width: 100%;
 }
 
+.browser-warning {
+	background-color: #F2BFBF;
+	border: 1px solid #E59999;
+	color: #000000;
+	font-size: 1.1em;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 1em 1em 0 1em;
+	position: relative;
+}
+
 .walkthrough li a:link,
 .walkthrough li a:visited,
 .walkthrough li a:hover,
