@@ -31,6 +31,7 @@
 				<!--<li><a href="buttons.php">Buttons</a></li>-->
 				<li class="page-colors"><a href="colors.php"><span>Colors</span></a></li>
 				<li class="page-tables"><a href="tables.php"><span>Tables</span></a></li>
+				<li class="page-templates"><a href="how-to.php"><span>Learn</span></a></li>
 			</ul>
 		</nav>
 		

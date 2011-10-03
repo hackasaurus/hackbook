@@ -85,7 +85,7 @@
 	
 		<div class="how-it-looks">
 			<h2>How it looks</h2>
-			<div class="snippet-preview snippet-image-transform-1">
+			<div class="preview">
 				<a style="" href="http://google.com"><img src="library/asset/dinosaur.jpg" alt="dinosaur" width="240px" height="180" /></a>
 			</div>
 			<a class="button" href="http://jsbin.com/anewoz/2/edit#html,live">Hack This</a>

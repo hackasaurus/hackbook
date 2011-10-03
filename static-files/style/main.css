@@ -535,6 +535,46 @@ nav.sites li.goggles a {
 	background-image: url(../image/icon-goggles.png);
 	}
 
+
+.nav-content {
+	float: right;
+	width: 22%;
+	margin-right: 3%;
+	background-image: url("../image/alpha/black-15.png");
+	border-bottom: 2px solid rgba(0, 0, 0, 0.35);
+	border-radius: 4px 4px 4px 4px;
+	padding: 0;
+	position: fixed;
+	right: 0;
+	color: #333;
+	font-size: 1.1em;
+}
+
+.nav-content ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-content li {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dotted #fff;
+	list-style-type: none;
+	padding: 0.5em 5%;
+}
+
+.nav-content li:last-of-type {
+	border-bottom: none;
+}
+
+.nav-content a:link,
+.nav-content a:visited,
+.nav-content a:hover,
+.nav-content a:focus,
+.nav-content a:active {
+	text-decoration: none;
+}
+
 .creative-commons {
 	margin: 0 5px 0 0;
 	float: left;
@@ -552,7 +592,8 @@ footer {
 	text-align: left;
 	line-height: 1.2em;
 	background-image: url("../image/footer.jpg");
-	position: absolute;
+	/*position: absolute;*/
+	position: relative;
 	height: 3em;
 	bottom: 0;
 	width: 92%;
@@ -725,11 +766,46 @@ li.addon {
 	margin: 0 0 0.2em 0;
 	}
 
+.post {
+	float: left;
+    margin-left: 3%;
+    width: 69%;
+    color: #333;
+    margin-bottom: 2em;
+}
+
+.post .snippet {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-image: none;
+	border-bottom: none;
+	border-radius: 0;
+}
+
+.post a:link,
+.post a:visited,
+.post a:hover,
+.post a:focus,
+.post a:active,
+.nav-content a:link,
+.nav-content a:visited,
+.nav-content a:hover,
+.nav-content a:focus,
+.nav-content a:active {
+	color: #458DA3;
+}
+
 .preview a:link,
 .preview a:visited,
 .preview a:hover,
 .preview a:focus,
-.preview a:active {
+.preview a:active,
+.content a:link,
+.content a:visited,
+.content a:hover,
+.content a:focus,
+.content a:active {
 	color: #0066FF;
 	}
 
@@ -786,6 +862,18 @@ li.addon {
 	padding: 0;
 	margin: 0;
 	}
+
+
+#cheatsheet-html {
+	float: left;
+	width: 32.5%;
+}
+
+#cheatsheet-css {
+	float: left;
+	margin-left: 2%;
+	width: 32.5%;
+}
 
 .nav-library li a:link,
 .nav-library li a:visited,

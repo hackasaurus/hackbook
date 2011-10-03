@@ -28,84 +28,9 @@
 
 <style>
 
-	.nav-content {
-		float: right;
-		width: 22%;
-		margin-right: 3%;
-		background-image: url("../image/alpha/black-15.png");
-		border-bottom: 2px solid rgba(0, 0, 0, 0.35);
-		border-radius: 4px 4px 4px 4px;
-		padding: 0;
-		position: fixed;
-		right: 0;
-		color: #333;
-		font-size: 1.1em;
-	}
-	
-	.nav-content ul {
-		margin: 0;
-		padding: 0;
-	}
-	
-	.nav-content li {
-		margin: 0;
-		padding: 0;
-		border-bottom: 1px dotted #fff;
-		list-style-type: none;
-		padding: 0.5em 5%;
-	}
-	
-	.nav-content li:last-of-type {
-		border-bottom: none;
-	}
-	
-	.nav-content a:link,
-	.nav-content a:visited,
-	.nav-content a:hover,
-	.nav-content a:focus,
-	.nav-content a:active {
-		text-decoration: none;
-	}
-	
-	.post {
-		float: left;
-	    margin-left: 3%;
-	    width: 69%;
-	    color: #333;
-	    margin-bottom: 2em;
-	}
-	
-	footer {
-		position: relative;
-	}
-	
-	.post .snippet {
-		padding: 0;
-		margin: 0;
-		width: 100%;
-		background-image: none;
-		border-bottom: none;
-		border-radius: 0;
-	}
-	
-	a:link,
-	a:visited,
-	a:hover,
-	a:focus,
-	a:active {
-		color: #458DA3;
-	}
-	
-	#cheatsheet-html {
-		float: left;
-		width: 32.5%;
-	}
-	
-	#cheatsheet-css {
-		float: left;
-		margin-left: 2%;
-		width: 32.5%;
-	}
+
+
+
 
 </style>
 
@@ -122,9 +47,17 @@
 
 <article class="post" id="what-is-html">
 
-<h1>What is HTML?</h1>
+<h1>HTML</h1>
 
-<p>HTML stands for HyperText Markup Langauge. We use HTML "tags" to tell the browser (the bit of software that shows us webpages) what our content is. So if we want to tell something be a paragraph, we give it a paragraph tag like this:</p>
+<p>HTML stands for HyperText Markup Langauge. We use HTML "tags" to tell the browser (the bit of software that shows us webpages) what our content is. When we're writing HTML, this is referred to as "marking up" content. In other words, we're adding special annotations to it that makes the content make more sense to humans and computers.</p>
+
+<h2>What's so great about HTML?</h2>
+
+<p>HTML pages can be viewed on pretty much any device. You don't need special software to write it, just a simple text editor. When we mark up content in HTML, we're basically describing what that content is. We mark up content by using something called a tag. We open the tag, put the relevant content inside, then close it.</p>
+
+<h2>Marking up paragraphs</h2>
+
+<p>So if we want to tell something be a paragraph, we give it a paragraph tag like this:</p>
 
 <article class="snippet" id="snippet-paragraph-1">
 	<div class="examples">
@@ -139,19 +72,25 @@
 		<div class="how-it-works">
 			<h2>The code</h2>
 			<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/paragraph-1.html') ?></code></pre>
+			<div class="instructions">
+				<p>It's really easy. We open the tag, pop our content inside, then when we're done, we close it using a forward slash.</p>
+			</div>
 		</div>
 	</div>
 </article>
 
-<p>It's really easy. We open the tag, pop our content inside, then when we're done, we close it using a forward slash.</p>
+<h2>Marking up links</h2>
 
-<p>If we want some text to behave as a link, we give it a link tag like this:</p>
+<p>If we want some text to behave as a link, we need to tell the browser 3 things. First, we need to tell it that we're making a link, then we need to tell it where we want people to go when they click on the link, and we also need to tell it what we want the clickable content to be.</p>
 
 <article class="snippet" id="snippet-link-1">
 	<div class="examples">
 		<div class="how-it-works">
 			<h2>The code</h2>
 			<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/link-1.html') ?></code></pre>
+			<div class="instructions">
+				<p>As you can see, we've opened the tag with an &lt;a, and the href="&hellip;" bit tells the browser where the person will go when they click on the link. The browser makes the link blue and gives it an underline so people know they can click on it. When we want the link to stop, we close the tag by typing &lt;/a&gt;.</p>
+			</div>
 		</div>
 		<div class="how-it-looks">
 			<h2>How it looks</h2>
@@ -163,7 +102,9 @@
 	</div>
 </article>
 
-<p>We open the tag with an &lt;a, and the href="&hellip;" bit tells the browser where the person will go when they click on the link. The browser makes the link blue and gives it an underline so people know they can click on it. When we want the link to stop, we close the tag by typing &lt;/a&gt;</p>
+<h2>See for yourself</h2>
+
+<p>You can see how pages are marked up by looking at the source code. Try right-clicking on this web page and selecting "View Source".</p>
 
 <p>Want to find out more? <a href="http://www.w3.org/wiki/The_basics_of_HTML">Read the W3C's page on the basics of HTML</a></p>
 
@@ -177,9 +118,33 @@
 	
 	<p>CSS stands for Cascading Style Sheet. It's a bit of a funny name, but it will make sense when we start using it.</p>
 	
-	<p>In my HTML, I've got 2 headings.</p>
+	<p>When we write CSS, first we say what tag we want to style (like the paragraph tag), then we say what we want to do with it (like give it a different color), then we say what that style is going to be (like red).
 	
-	<p>In my CSS, I'm targeting these elements. The h1 points to the &lt;h1&gt; tag, and the open curly brace says "styles start here". I can then add my styles. The closing curly brace says "I've finished writing styles for this tag".</p>
+	<p>In CSS, the thing we are styling is called the selector, the thing we are going to do with it is called the property, and the style we're giving it is called the value.</p>
+	
+	<p>There are lots of different properties and values which have different effects, like spells in a spell book.</p>
+	
+	<h2>Styling some text</h2>
+	
+	<p>In my CSS, I'm targeting these elements. The p points to the &lt;p&gt; tag, and the open curly brace says "styles start here". I can then add my styles. The closing curly brace says "I've finished writing styles for this tag".</p>
+	
+	<article class="snippet" id="snippet-paragraph-2">
+		<div class="example">
+			<div class="how-it-looks">
+				<h2>How it looks</h2>
+				<div class="preview snippet-paragraph-2c">
+					<p>Lorem ipsum shizznit sit amizzle, consectetuer cool.</p>
+				</div>
+				<a class="button" href="http://jsbin.com/utivep/1/edit#html,live">Hack This</a>
+			</div>
+			<div class="how-it-works">
+				<h2>The code</h2>
+				<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/paragraph-2c.html') ?></code></pre>
+			</div>
+		</div>
+	</article>
+	
+	<p>In my HTML, I've got 2 headings. Because both headings have different tags, I can target these to give each heading a different style.</p>
 	
 	<article class="snippet" id="snippet-color-1">
 		<div class="examples">
