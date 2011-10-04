@@ -758,6 +758,16 @@ li.addon {
     padding: 0 3% 10px;
 	}
 
+.template {
+	float: left;
+	width: 27.3%;
+	margin-left: 3%;
+}
+
+.template img {
+	width: 100%;
+}
+
 #resources ul {
 	margin: 0 0 1em 0;
 	}

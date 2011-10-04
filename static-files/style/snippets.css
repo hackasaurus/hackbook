@@ -191,6 +191,7 @@ article.snippet .preview * {
     max-width: 100%;
 }
 
+.button,
 a.button:link,
 a.button:visited,
 a.button:hover,
@@ -215,6 +216,7 @@ a.button:active {
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    line-height: 1.5em;
 }
 
 #snippet-color-1 .preview h1 {
