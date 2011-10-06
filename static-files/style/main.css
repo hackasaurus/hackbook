@@ -540,9 +540,6 @@ nav.sites li.goggles a {
 	float: right;
 	width: 22%;
 	margin-right: 3%;
-	background-image: url("../image/alpha/black-15.png");
-	border-bottom: 2px solid rgba(0, 0, 0, 0.35);
-	border-radius: 4px 4px 4px 4px;
 	padding: 0;
 	position: fixed;
 	right: 0;
@@ -553,6 +550,9 @@ nav.sites li.goggles a {
 .nav-content ul {
 	margin: 0;
 	padding: 0;
+	background-image: url("../image/alpha/black-15.png");
+	border-bottom: 2px solid rgba(0, 0, 0, 0.35);
+	border-radius: 4px 4px 4px 4px;
 }
 
 .nav-content li {
@@ -776,21 +776,38 @@ li.addon {
 	margin: 0 0 0.2em 0;
 	}
 
+iframe {
+	width: 100%;
+	border: none;
+	height: 500px;
+	background-color: #FFF;
+	border-radius: 5px;
+	border: 2px solid #CCC;
+}
+
 .post {
 	float: left;
     margin-left: 3%;
     width: 69%;
     color: #333;
     margin-bottom: 2em;
+    background-image: none;
+    border-radius: 0;
+    border: none;
 }
 
 .post .snippet {
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	background-image: none;
-	border-bottom: none;
-	border-radius: 0;
+	padding: 1%;
+	width: 99%;
+}
+
+.post h1 {
+	text-align: left;
+}
+
+.post h2 {
+	margin-top: 40px;
+	margin-bottom: 5px;
 }
 
 .post a:link,
@@ -874,15 +891,24 @@ li.addon {
 	}
 
 
-#cheatsheet-html {
-	float: left;
-	width: 32.5%;
-}
-
-#cheatsheet-css {
-	float: left;
-	margin-left: 2%;
-	width: 32.5%;
+a.cheatsheet-html:link,
+a.cheatsheet-html:visited,
+a.cheatsheet-html:hover,
+a.cheatsheet-html:focus,
+a.cheatsheet-html:active,
+a.cheatsheet-css:link,
+a.cheatsheet-css:visited,
+a.cheatsheet-css:hover,
+a.cheatsheet-css:focus,
+a.cheatsheet-css:active {
+	clear: both;
+	width: auto
+	margin-top: 10px;
+	background-image: url(../image/icon-page.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding: 2px 0 2px 27px;
+	display: block;
 }
 
 .nav-library li a:link,
