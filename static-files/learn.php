@@ -21,55 +21,45 @@
 
 	<div class="post-content">
 		
-		<p>HTML stands for HyperText Markup Langauge. We use HTML "tags" to tell the browser (the bit of software that shows us webpages) what our content is. When we're writing HTML, this is referred to as "marking up" content. In other words, we're adding special annotations to it that makes the content make more sense to humans and computers.</p>		
+		<p>HTML stands for HyperText Markup Langauge. It's a special language we use to talk to tell computers how to build webpages. We use HTML <code>&lt;tags&gt;</code> to tell the browser (the bit of software that shows us webpages) what our content is. A tag opens when the content starts, like this: <code>&lt;tag&gt;</code>, and closes when it's finished, like this: <code>&lt;/tag&gt;</code>.</p>
+		
+		<p>When we're writing HTML, this is referred to as "marking up" content. In other words, we're adding invisible notes to it that makes the content make more sense to humans and computers. The tags describe what the content is so the computer can translate it for humans. Is it an image? A link? A heading?</p> 
 		
 		<h2>What's so great about HTML?</h2>
 		
-		<p>HTML pages can be viewed on pretty much any device. You don't need special software to write it, just a simple text editor. When we mark up content in HTML, we're basically describing what that content is.</p>
+		<p>HTML pages can be viewed on pretty much any device that has a browser. A browser is something that looks at your code and translates it into a webpage. If you're reading this online, you're using a browser right now.</p>
 		
-		<h2>Writing HTML</h2>
+		<p>To view an HTML page you use a browser, but to write one you can use a simple text editor. You've probably already got one installed, like Notepad or Textedit. To turn a page into a webpage, just save it as an HTML file (put .html on the end when you're saving it) like about-me.html.</p>
 		
-		<p>Like people, web pages have a head and a body. In the head, we put information that's useful to the browser but that we don't want to appear on the page. In the body, we put all the content. This is how a very basic webpage is built:</p>
+		<h2>Making a webpage</h2>
 		
-		<!--<article class="snippet" id="snippet-template-1">
-			<div class="examples">
-				<div class="how-it-works">
-					<h3>The code</h3>
-					<p class="helper-text">You can copy and paste this, or click "hack this" to edit it straight away</p>
-					<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/template-1.html') ?></code></pre>
-				</div>
-				<div class="how-it-looks">
-					<h3>How it looks</h3>
-					<p class="helper-text">A preview of what the code looks like</p>
-					<div class="preview">
-						<img src="library/asset/template-1.png" alt="Screenshot of template 1" />
-						<a class="button" href="http://jsbin.com/osajac/36/edit#html,live">Hack this</a>
-						<p class="helper-text">Click "Hack This" to play with the code</p>
-					</div>
-				</div>
-			</div>
-		</article>-->
+		<p>At the top of our webpage, we need to put some information for the browser. We tell it that it's a webpage by typing <code>&lt;!DOCTYPE html&gt;</code>, then we open an <code>&lt;html&gt;</code> tag to tell it that we've started writing HTML. Before we close this tag, we put another tag inside it. (When we open another tag before closing the previous one, this is called nesting tags.)</p>
 		
-		<iframe src="http://jsbin.com/osajac/36/edit#html,live"></iframe>
+		<p>Like people, web pages have a head and a body, so we have a <code>&lt;head&gt;</code> tag and a <code>&lt;body&gt;</code> tag. In the head, we put information that's useful to the browser but that we don't want to appear on the page. In the body, we put all the content. You can have a look at the example I've built here:</p>
 		
-		<p>We mark up content by using something called a tag. We open the tag, put the relevant content inside, then close it.</p>
+		<iframe src="http://jsbin.com/osajac/36/edit#html,live"></iframe>	
 		
+		<p>Don't worry, you don't need to remember to write all that stuff, just copy and paste it.</p>	
 		
-		<h2>Marking up paragraphs</h2>
+		<h2>Paragraphs</h2>
 		
-		<p>So if we want to tell something be a paragraph, we give it a paragraph tag like this:</p>
+		<p>So if we want to tell something be a paragraph, we wrap it in a <code>&lt;p&gt;</code> tag within our <code>&lt;body&gt;</code> tags like this:</p>
 		
 		<iframe src="http://jsbin.com/oripic/1/edit#html,live"></iframe>
 		
 		<p>It's really easy. We open the tag, pop our content inside, then when we're done, we close it using a forward slash.</p>
 		
-		<h2>Marking up links</h2>
+		<h2>Headings</h2>
+		
+		<p>Headings, like the one above break up the text and make it easier for someone to read. There are 6 different types of heading. Why so many? Well, you're probably going to want your biggest most important heading to be at the top of your page to explain what that page is all about, like "About me". We give this an <code>&lt;h1&gt;</code> tag. On your page, you'll probably want to have different sections like "My favourite things" and "My least favourite things". These could be <code>&lt;h2&gt;</code> tags which will appear a little smaller than the <code>&lt;h1&gt;</code>. Then within say the "My favourite things" section, you may want other sub-headings like "Films", "Food" and "Music". For these, you can use the <code>&lt;h3&gt;</code>. These different types of heading are called "heading level"s and they go all the way from <code>&lt;h1&gt;</code> which is the biggest and most important, to <code>&lt;h6&gt;</code> which is the smallest and least important. You'll probably only end up using the first 3 though!</p>
+		
+		<h2>Links</h2>
 		
 		<p>If we want some text to behave as a link, we need to tell the browser 3 things. First, we need to tell it that we're making a link, then we need to tell it where we want people to go when they click on the link, and we also need to tell it what we want the clickable content to be.</p>
 		
 		<iframe src="http://jsbin.com/ewizaw/1/edit#html,live"></iframe>
 		
-		<p>As you can see, we've opened the tag with an &lt;a, and the href="&hellip;" bit tells the browser where the person will go when they click on the link. The browser makes the link blue and gives it an underline so people know they can click on it. When we want the link to stop, we close the tag by typing &lt;/a&gt;.</p>
+		<p>As you can see, we've opened the tag with an <code>&lt;a&gt;</code>, and the <code>href="&hellip;"</code> bit tells the browser where the person will go when they click on the link. The browser makes the link blue and gives it an underline so people know they can click on it. When we want the link to stop, we close the tag by typing <code>&lt;/a&gt;</code>.</p>
 		
 		<h2>See for yourself</h2>
 		
@@ -87,22 +77,18 @@
 	
 		<div class="post-content">
 		
-		<p>HTML is all about telling the browser what things are. The browser gives content default styles depending on what tags we give it, but if we want to add our own styles, we use CSS.</p>
-		
-		<p>CSS stands for Cascading Style Sheet. It's a bit of a funny name, but it will make sense when we start using it.</p>
+		<p>HTML is all about telling the browser what things are. The browser gives content default styles depending on what tags we give it, but if we want to add our own styles, we use CSS. CSS stands for Cascading Style Sheet. It's a bit of a funny name, but it will make sense when we start using it.</p>
 		
 		<p>When we write CSS, first we say what tag we want to style (like the paragraph tag), then we say what we want to do with it (like give it a different color), then we say what that style is going to be (like red).</p>
-		
-		<p>In CSS, the thing we are styling is called the selector, the thing we are going to do with it is called the property, and the style we're giving it is called the value.</p>
-		
-		<p>There are lots of different properties and values which have different effects, like spells in a spell book.</p>
-		
-		<h2>Styling some text</h2>
 		
 		<p>In my CSS, I'm targeting these elements. The p points to the &lt;p&gt; tag, and the open curly brace says "styles start here". I can then add my styles. The closing curly brace says "I've finished writing styles for this tag".</p>
 		
 		<iframe src="http://jsbin.com/utivep/1/edit#html,live"></iframe>
 		
+		<p>In CSS, the thing we are styling is called the selector, the thing we are going to do with it is called the property, and the style we're giving it is called the value.</p>
+		
+		<p>There are lots of different properties and values which have different effects, like spells in a spell book.</p>		
+				
 		<h2>Styling headings</h2>
 		
 		<p>In my HTML, I've got 2 headings. Because both headings have different tags, I can target these to give each heading a different style.</p>
