@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	
+	<!-- Meta Data -->
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Hackasaurus Snippet Library</title>
+	
+	<!-- Links -->
+	<link href="style/main.css" rel="stylesheet" type="text/css">
+	<link href="style/snippets.css" rel="stylesheet" type="text/css">
+	<!--<link rel="stylesheet" href="http://f.fontdeck.com/s/css/E7uOHrgs0nw2MqW6o/fP2Vg4IGg/maban.co.uk/6992.css" type="text/css" />-->
+	
+	<!-- Browser compatibility -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Syntax Highlighter JS files -->
+	<link href="script/syntax-highlighter/src/prettify.css" type="text/css" rel="stylesheet" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<script type="text/javascript" src="script/syntax-highlighter/src/prettify.js"></script>
+	<!--<script type="text/javascript" src="script/cookie.js"></script>-->
+	<script type="text/javascript" src="script/accordion.js"></script>
+	<script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+			
+	<script type="text/javascript">		
+		$(document).ready(function() {
+			/* Sets the cookie */
+			/*var color = $.cookie("color");
+  			if (color != "") {
+				$("body").attr('class', color);
+  			}*/
+  			
+			/* Adds hasjs class to html tag if javascript is on */
+			jQuery(function($) {
+				$('html').addClass('hasjs');
+			});
+			/* Adds a class to the body for colour switcher */
+			$(".colour li").click(function(){
+				var color = $(this).attr('class');
+				$.cookie('color', color);
+				$("body").attr('class', color);
+				return false;
+			});
+			/* Accoridon menus */			
+			$('.examples').hide();
+			$('.snippet:first .examples').show();
+			$('.snippet h1').click(
+			function() {
+				var checkElement = $(this).next();
+				if((checkElement.is('.examples')) && (checkElement.is(':visible'))) {
+					return false;
+				}
+				if((checkElement.is('.examples')) && (!checkElement.is(':visible'))) {
+					$('.snippet .examples:visible').slideUp('normal');
+					checkElement.slideDown('normal');
+					return false;
+				}
+			});
+			/* Accoridon menus */			
+			$('.colors ul').hide();
+			$('.colors span').click(
+			function() {
+				var checkElement = $(this).next();
+				window.location.hash = $(this).parent('id');
+				if((checkElement.is('.colors ul')) && (checkElement.is(':visible'))) {
+					return false;
+				}
+				if((checkElement.is('.colors ul')) && (!checkElement.is(':visible'))) {
+					$('.colors ul:visible').slideUp('normal');
+					checkElement.slideDown('normal');
+					return false;
+				}
+			});
+			
+		});
+
+</script>
+
+</head>
+
+<body class="{% block section_class %}{% endblock %}" onload="prettyPrint()">
+
+	<div class="container">
+	
+		<header>
+			<a href="index.php"><img src="./image/logo.png" alt="Hackbook" /></a>
+			<p class="tagline">A library of code for your hacks</p>
+			<p class="beta">Beta</p>
+		</header>
+		
+		<nav class="sites">
+			<ul>
+				<li class="hackasaurus">
+					<a href="http://hackasaurus.org">Hackasaurus</a>
+					<!--<span class="tooltip">Hackasaurus Website</span>-->
+				</li>
+				<li class="webpad">
+					<a href="http://htmlpad.org/">WebPad</a>
+					<!--<span class="tooltip">Web Pad</span>-->
+				</li>
+				<li class="mozilla">
+					<a href="http://mozilla.org">Mozilla</a>
+				</li>
+			</ul>
+		</nav>
+
+		<nav class="primary">
+			<ul>
+				<li class="page-templates"><a href="templates.php"><span>Templates</span></a></li>
+				<li class="page-text"><a href="text.php"><span>Text</span></a></li>
+				<li class="page-images"><a href="images.php"><span>Images</span></a></li>
+				<li class="page-links"><a href="links.php"><span>Links</span></a></li>
+				<!--<li><a href="buttons.php">Buttons</a></li>-->
+				<li class="page-colors"><a href="colors.php"><span>Colors</span></a></li>
+				<li class="page-tables"><a href="tables.php"><span>Tables</span></a></li>
+				<li class="page-learn"><a href="learn.php"><span>Learn</span></a></li>
+			</ul>
+		</nav>
+		
+		<!-- <div class="colour">
+			<ul>
+				<li class="red">Red</li>
+				<li class="orange">Orange</li>
+				<li class="yellow">Yellow</li>
+				<li class="green">Green</li>
+				<li class="blue">Blue</li>
+				<li class="purple">Purple</li>
+				<li class="pink">Pink</li>
+				<li class="grey">Grey</li>
+			</ul>
+		</div> -->
+		
+		{% block content_primary %}{% endblock %}
+		
+		<footer>
+			<a href="http://www.macfound.org"><img class="logo" src="image/macfound.gif" alt="MacArthur Foundation"/></a>
+			<a href="http://www.mozilla.org/"><img class="logo" src="image/mozilla_wht.gif" alt="Mozilla"/></a>
+			<img class="creative-commons" src="image/cc.png" alt="creative commons logo">
+			<p>Portions of this content are &copy;1998-2011 by individual mozilla.org contributors. Content available under a <a target="new" href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons Attribution 3.0 Unported License</a>.</p>
+			<p>Fugue Icons by <a hre="http://p.yusukekamiyamane.com/">Yusuke Kamiyamane</a>.</p>
+		</footer>
+		
+	</div><!-- End Container -->
+	
+</body>
+	
+</html>

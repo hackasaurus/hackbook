@@ -1,8 +1,8 @@
-<?php include_once("include/head.php")?>
+{% extends "base.html" %}
 
-<body class="page-buttons" onload="prettyPrint()">
+{% block section_class %}page-buttons{% endblock %}
 
-<?php include_once("include/header.php")?>
+{% block content_primary %}
 
 <section role="main" class="buttons">	
 		
@@ -13,7 +13,7 @@
 	<div class="examples">
 		<div class="how-it-works">
 			<h2>The code</h2>
-			<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/button-1.html') ?></code></pre>
+			<pre class="code"><code class="prettyprint lang-html"><!--<?php include_once('library/snippet/button-1.html') ?>--></code></pre>
 			
 			<h2>Instructions</h2>
 			<div class="instructions">
@@ -38,7 +38,7 @@
 	<div class="examples">
 		<div class="how-it-works">
 			<h2>The code</h2>
-			<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/button-2.html') ?></code></pre>
+			<pre class="code"><code class="prettyprint lang-html"><!--<?php include_once('library/snippet/button-2.html') ?>--></code></pre>
 		</div>
 		<div class="how-it-looks">
 			<h2>How it looks</h2>
@@ -52,4 +52,4 @@
 
 </section>
 
-<?php include_once("include/footer.php")?>
+{% endblock %}
