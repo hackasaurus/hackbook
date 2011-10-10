@@ -10,7 +10,8 @@
 
 <article class="snippet" id="snippet-paragraph-1">
 	<h1>Paragraphs</h1>
-	<div class="examples">
+	<iframe src="http://webpad.hackasaurus.org/enedum/1/edit"></iframe>
+	<!--<div class="examples">
 		<div class="how-it-looks">
 			<h2>How it looks</h2>
 			<div class="preview">
@@ -23,7 +24,7 @@
 			<h2>The code</h2>
 			<pre class="code"><code class="prettyprint lang-html"><?php include_once('library/snippet/paragraph-1.html') ?></code></pre>
 		</div>
-	</div>
+	</div>-->
 </article>
 
 <article class="snippet" id="snippet-paragraph-2">
